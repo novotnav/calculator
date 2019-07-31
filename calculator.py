@@ -2,8 +2,6 @@ operation = input("Choose the mathematical operation \n (1 - addition, 2 - subtr
 nr_a = input("First number: ")
 nr_b = input("Second number: ")
 
-
-
 nr_a = int(nr_a)
 nr_b = int(nr_b)
 operation = int(operation)
