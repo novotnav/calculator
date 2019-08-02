@@ -1,25 +1,20 @@
-operation = input("Choose the mathematical operation \n (1 - addition, 2 - subtraction, 3 - multiplication, 4 - division): ")
+operation = input("Choose the mathematical operation \n (a - addition, s - subtraction, m - multiplication, d - division): ")
 nr_a = input("First number: ")
 nr_b = input("Second number: ")
 
-try:
-    val = int(operation)
-    operation = int(operation)
-    if operation > 4:
-        print("Please use only numbers 1 - 4 to choose the operation")
-except ValueError:
-    print("Please use only numbers 1 - 4 to choose the operation")
+if operation is not "a" and operation is not "s" and operation is not "m" and operation is not "d":
+    print("Please insert only letters a, s, m or d to choose the operation.")
 
 try:
     val = int(nr_a)
     nr_a = int(nr_a)
 except ValueError:
-    print("Please insert only numbers")
+    print("Please insert only numbers.")
 try:
     val = int(nr_b)
     nr_b = int(nr_b)
 except ValueError:
-    print("Please insert only numbers")
+    print("Please insert only numbers.")
 
 if isinstance(nr_a, int) and isinstance(nr_b, int):
     add = nr_a + nr_b
@@ -27,13 +22,13 @@ if isinstance(nr_a, int) and isinstance(nr_b, int):
     mul = nr_a * nr_b
     div = nr_a / nr_b
 
-    if operation == 1:
+    if operation is "a":
         print("The result is: " + str(add))
-    if operation == 2:
+    if operation is "s":
         print("The result is: " + str(sub))
-    if operation == 3:
+    if operation is "m":
         print("The result is: " + str(mul))
-    if operation == 4:
+    if operation is "d":
         print("The result is: " + str(div))
 
 
