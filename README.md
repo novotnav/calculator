@@ -1,6 +1,6 @@
 ## Calculators
 
-This repository contains scripts of calculatorscd.
+This repository contains scripts of calculators.
 
 The scripts are described below.
 
