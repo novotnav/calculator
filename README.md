@@ -1,4 +1,4 @@
-## Calculators
+# **Calculators**
 
 This repository contains scripts of calculators.
 
